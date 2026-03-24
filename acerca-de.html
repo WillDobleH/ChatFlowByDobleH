@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - FlowChat by DobleH</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <!-- BoxIcons para iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-header {
+            text-align: center;
+            padding: 80px 0 40px;
+        }
+
+        .about-title {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-description {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .about-card {
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            transition: var(--transition);
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .about-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .about-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .about-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .creator-section {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.8));
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-glass);
+            padding: 60px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .creator-info h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .creator-info p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .creator-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .about-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="FlowChat Logo">
+                <span>FlowChat <span class="badge">by DobleH</span></span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca-de.html" class="active">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="nav-auth">
+                    <a href="https://flowchat-dh.base44.app" class="btn btn-outline" target="_blank" rel="noopener">Iniciar sesión</a>
+                    <a href="https://flowchat-dh.base44.app" class="btn btn-primary btn-glow" target="_blank" rel="noopener">Registrarte <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" style="display: block;">
+        <div class="container">
+            
+            <div class="about-header fade-in">
+                <h1 class="title about-title">¿Qué es FlowChat?</h1>
+                <p class="about-description">FlowChat by DobleH es una plataforma diseñada para ayudar a negocios, emprendedores y creadores a automatizar su atención al cliente de forma simple y eficiente. Nuestro objetivo es eliminar tareas repetitivas y permitir que te enfoques en lo que realmente importa: hacer crecer tu negocio.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <i class='bx bx-target-lock'></i>
+                    <h3>Nuestra Misión</h3>
+                    <p>Nuestra misión es hacer que la automatización sea accesible para todos. Creemos que cualquier persona debería poder crear un chatbot inteligente sin necesidad de saber programar. Facilitamos el crecimiento de cada proyecto integrando tecnología avanzada con simplicidad.</p>
+                </div>
+
+                <div class="about-card fade-in" style="transition-delay: 0.1s;">
+                    <i class='bx bx-glasses'></i>
+                    <h3>Nuestra Visión</h3>
+                    <p>Buscamos convertir FlowChat en una plataforma completa de automatización a nivel global, integrando inteligencia artificial más avanzada, análisis de datos detallados y herramientas potentes que sirvan de motor e impulsen el crecimiento exponencial de nuestros usuarios.</p>
+                </div>
+
+                <div class="about-card fade-in" style="transition-delay: 0.2s;">
+                    <i class='bx bx-check-shield'></i>
+                    <h3>¿Por qué Elegirnos?</h3>
+                    <p>Disfruta de respuestas automáticas basadas en tus propias preguntas frecuentes. Es rápido y fácil: configura tu chatbot en minutos. Con una integración súper sencilla, funciona en cualquier sitio web para mantener a tus clientes atendidos 24/7 sin esfuerzo técnico.</p>
+                </div>
+            </div>
+
+            <div class="creator-section slide-in-right">
+                <div class="creator-info">
+                    <h3>Sobre el Creador</h3>
+                    <p>FlowChat fue creado por DobleH, con la firme visión de construir herramientas web modernas, simples pero poderosas que ayuden a las personas a aprovechar la tecnología de última generación sin complicaciones.</p>
+                    <p>Este proyecto nace de la profunda necesidad de automatizar procesos reales para emprendedores y mejorar la calidad de comunicación directa entre negocios y usuarios en todo momento.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">FlowChat <span style="font-size:0.8rem; font-weight:normal; color:var(--text-secondary)">by DobleH</span></span>
+                <p>© 2026 DobleH. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="terminos.html">Términos de Servicio</a>
+                <a href="privacidad.html">Aviso de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
